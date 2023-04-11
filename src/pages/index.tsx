@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <Layout page="home">
       <main className="flex flex-col justify-center">
-        <section id="home" className="flex items-center flex-col h-fit mt-20">
+        <section className="flex items-center flex-col h-fit mt-20">
           <div className="flex bg-secondary w-72 h-72 rounded-full items-center justify-center">
             <Image src={ProfilePic} alt="Picture of John A. Josephsen" className="w-64 h-64 rounded-full object-cover"></Image>
           </div>
