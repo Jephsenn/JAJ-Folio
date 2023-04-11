@@ -4,8 +4,10 @@ import Layout from '@/components/layout'
 import Header from "@/components/header"
 import Skill from "@/components/skills"
 import ProfilePic from '../../public/images/webdev.jpg'
+import JEAuto from '../../public/images/JEAuto.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3, faMdb } from "@fortawesome/free-brands-svg-icons"
+import ExperienceCard from '@/components/experiencecard'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,16 +24,24 @@ export default function Home() {
             <h2 className="my-6 mx-auto text-white text-3xl">An aspiring Full Stack Web Developer with a passion for creating new things</h2>
             <ul className="my-6 mx-auto w-1/2 flex flex-row items-center justify-around">
               <li>
-                <FontAwesomeIcon className="text-secondary w-12" icon={faInstagram}/>
+                <a href="https://www.instagram.com/johnjosephsen/" target="_blank">
+                  <FontAwesomeIcon className="text-secondary w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1/4" icon={faInstagram}/>
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon className="text-secondary w-12" icon={faFacebook}/>
+                <a href="https://www.facebook.com/john.josephsen.9" target="_blank">
+                  <FontAwesomeIcon className="text-secondary w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1/4" icon={faFacebook}/>
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon className="text-secondary w-12" icon={faLinkedin}/>
+                <a href="https://www.linkedin.com/in/john-josephsen/" target="_blank">
+                  <FontAwesomeIcon className="text-secondary w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1/4" icon={faLinkedin}/>
+                </a>
               </li>
               <li>
-                <FontAwesomeIcon className="text-secondary w-12" icon={faGithub}/>
+                <a href="https://github.com/Jephsenn" target="_blank">
+                <FontAwesomeIcon className="text-secondary w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1/4" icon={faGithub}/>
+                </a>
               </li>
             </ul>
             <button className="my-6 rounded-full bg-black text-white mx-auto w-1/6 p-3">Get In Touch</button>
@@ -50,11 +60,23 @@ export default function Home() {
               <Skill faIcon={faMdb} name="SQL"/>
             </ul>
         </section>
-        <section className="h-screen">
+        <section className="h-fit">
          <Header title="Experience"/>
+         <ul className="my-12 flex flex-row flex-wrap justify-center">
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+         </ul>
+        </section>
+        <section className="bg-secondary h-fit">
+         <Header title="Education"/>
+         <p className="mt-12 mb-4 mx-auto text-white text-3xl text-center">Recent Montclair State University Graduate</p>
+         <p className="my-4 mx-auto text-white text-3xl text-center">Major: Computer Science</p>
+         <p className="my-4 mx-auto text-white text-3xl text-center mb-12">Average GPA: 3.6</p>
         </section>
       </main>
-      
     </Layout>
     
   )
