@@ -4,7 +4,7 @@ import { faGithub, faInstagram, faFacebook, faLinkedin } from "@fortawesome/free
 export default function Footer() {
     return (
       <div className="h-16 bg-primary w-full flex items-center">
-        <p className="text-md text-white mx-4">Designed by JAJ</p>
+        <p className="text-md text-white ml-12 mr-4">Designed by JAJ</p>
         <ul className="flex w-1/6 flex-row items-center justify-around">
             <li>
                 <a href="https://www.instagram.com/johnjosephsen/" target="_blank">
