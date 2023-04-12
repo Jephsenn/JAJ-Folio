@@ -12,7 +12,7 @@ export default function Navbar(props: Props){
         const nav = document.getElementById("nav");
         function checkScroll() {
         if (window.scrollY > 0) {
-            nav?.classList.add("bg-secondary");
+            nav?.classList.add("bg-primary");
             nav?.children[0].children[0].classList.remove("hover:text-secondary");
             nav?.children[1].children[0].children[0].classList.remove("hover:text-secondary");
             nav?.children[1].children[1].children[0].classList.remove("hover:text-secondary");
@@ -24,7 +24,7 @@ export default function Navbar(props: Props){
             nav?.children[1].children[2].classList.add("bg-black");
             nav?.children[1].children[2].classList.add("text-white");
         } else if (window.scrollY === 0) {
-            nav?.classList.remove("bg-secondary");
+            nav?.classList.remove("bg-primary");
             nav?.children[0].children[0].classList.remove("hover:text-black");
             nav?.children[1].children[0].children[0].classList.remove("hover:text-black");
             nav?.children[1].children[1].children[0].classList.remove("hover:text-black");
