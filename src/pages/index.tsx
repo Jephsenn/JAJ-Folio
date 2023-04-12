@@ -5,6 +5,10 @@ import Header from "@/components/header"
 import Skill from "@/components/skills"
 import ProfilePic from '../../public/images/profilepic.jpg'
 import JEAuto from '../../public/images/JEAuto.png'
+import JAJApparel from '../../public/images/JAJApparel.png'
+import MKJJ from '../../public/images/MKJJBanking.png'
+import QualisEvents from '../../public/images/QualisEvents.png'
+import Sintennial from '../../public/images/Sintennial.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3, faMdb } from "@fortawesome/free-brands-svg-icons"
 import ExperienceCard from '@/components/experiencecard'
@@ -69,11 +73,11 @@ export default function Home() {
         <section className="h-fit bg-primary">
          <Header title="Experience"/>
          <ul className="my-12 flex flex-row flex-wrap justify-center">
+           <ExperienceCard src={Sintennial} alt="Sintennial RSPS" link="#"/>
+           <ExperienceCard src={QualisEvents} alt="Qualis Events" link="https://qualisevents.vercel.app"/>
            <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
-           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
-           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
-           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
-           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JAJApparel} alt="JAJ Apparel" link="#"/>
+           <ExperienceCard src={MKJJ} alt="MKJJ Online Bank" link="#"/>
          </ul>
         </section>
         <section className="bg-secondary h-fit">
