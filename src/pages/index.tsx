@@ -49,7 +49,7 @@ export default function Home() {
                   </a>
                 </li>
               </ul>
-              <button type="button" onClick={() => router.push('mailto:jjosephsenyt@gmail.com')} className="mt-4 mb-12 rounded-full bg-white text-black mx-auto lg:w-1/6 p-3 ease-in-out duration-200 hover:bg-gray-800 hover:text-white">Get In Touch</button>
+              <button type="button" onClick={() => router.push('mailto:jjosephsenyt@gmail.com')} className="mt-4 mb-12 rounded-full bg-white font-bold md:text-lg lg:text-xl text-black mx-auto py-3 px-5 ease-in-out duration-200 hover:bg-gray-800 hover:text-white">Get In Touch</button>
             </div>
           </div>
         </section>
