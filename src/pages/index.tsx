@@ -55,7 +55,7 @@ export default function Home() {
         </section>
         <section className="bg-secondary h-fit">
           <Header title="Skills"/>
-          <ul className="my-12 mx-auto w-1/2 flex flex-row items-center justify-around flex-wrap">
+          <ul className="my-12 mx-auto w-1/2 flex flex-row items-center justify-center flex-wrap">
               <Skill faIcon={faJava} name="Java"/>
               <Skill faIcon={faJs} name="JavaScript"/>
               <Skill faIcon={faNode} name="NodeJS"/>

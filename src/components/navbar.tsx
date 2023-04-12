@@ -53,7 +53,7 @@ export default function Navbar(props: Props){
                 <li className="mx-2 md:mx-6">
                     <a href="/resume/JAJResume.pdf" target="_blank" className="hover:cursor-pointer hover:text-secondary">Resume</a>
                 </li>
-                <li className="text-black ml-2 md:mx-6 bg-white px-4 py-1 rounded-full ease-in-out duration-200 hover:bg-gray-800 hover:text-white">
+                <li className="text-black ml-2 md:mx-6 bg-white px-4 py-1 rounded-full ease-in-out duration-200 hover:bg-gray-800 hover:text-white hover:cursor-pointer">
                   <button type="button" onClick={() => router.push('mailto:jjosephsenyt@gmail.com')}>Contact</button>
                 </li>
             </ul>
