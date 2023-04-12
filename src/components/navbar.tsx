@@ -43,7 +43,7 @@ export default function Navbar(props: Props){
 
     return (
         <nav id="nav" className="h-16 w-full flex items-center justify-between md:px-12 text-3xl fixed top-0 z-[999] ease-in-out duration-300 px-4">
-            <span className="text-white">
+            <span className="text-white font-bold">
                 <a id="jaj" href="#top" className="hover:text-secondary">JAJ</a>
             </span>
             <ul className="items-center text-white flex flex-direction-col text-lg">
