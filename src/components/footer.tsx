@@ -3,9 +3,9 @@ import { faGithub, faInstagram, faFacebook, faLinkedin } from "@fortawesome/free
 
 export default function Footer() {
     return (
-      <div className="h-16 bg-primary w-full flex items-center">
-        <p className="text-md text-white ml-12 mr-4">Designed by JAJ</p>
-        <ul className="flex w-1/6 flex-row items-center justify-around">
+      <footer className="h-16 bg-primary w-full flex items-center">
+        <p className="text-md text-white ml-4 md:ml-12 mr-2 md:mr-4">Designed by JAJ</p>
+        <ul className="flex w-1/3 md:w-1/6 flex-row items-center justify-around">
             <li>
                 <a href="https://www.instagram.com/johnjosephsen/" target="_blank">
                     <FontAwesomeIcon className="text-secondary w-6 ease-in-out duration-300 hover:text-white hover:-translate-y-0.5" icon={faInstagram}/>
@@ -27,6 +27,6 @@ export default function Footer() {
                 </a>
             </li>
         </ul>
-      </div>
+      </footer>
     )
   }
