@@ -64,7 +64,7 @@ export default function Home() {
               <Skill faIcon={faMdb} name="SQL"/>
             </ul>
         </section>
-        <section className="h-fit">
+        <section className="h-fit bg-primary">
          <Header title="Experience"/>
          <ul className="my-12 flex flex-row flex-wrap justify-center">
            <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
