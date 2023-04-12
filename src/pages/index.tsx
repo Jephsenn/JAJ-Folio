@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Layout from '@/components/layout'
 import Header from "@/components/header"
 import Skill from "@/components/skills"
-import ProfilePic from '../../public/images/webdev.jpg'
+import ProfilePic from '../../public/images/profilepic.jpg'
 import JEAuto from '../../public/images/JEAuto.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3, faMdb } from "@fortawesome/free-brands-svg-icons"
@@ -19,11 +19,11 @@ export default function Home() {
   return (
     <Layout page="home">
       <main className="flex flex-col justify-center">
-        <section className="flex items-center flex-col h-fit mt-20">
-          <div className="flex bg-secondary w-72 h-72 rounded-full items-center justify-center">
-            <Image src={ProfilePic} alt="Picture of John A. Josephsen" className="w-64 h-64 rounded-full object-cover"></Image>
+        <section className="flex items-center flex-col h-screen relative bg-[url('../../public/images/webdev.jpg')] bg-fixed bg-cover bg-center bg-no-repeat before:bg-black/25 before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0">
+          <div className="z-10 flex bg-secondary mt-20 w-72 h-72 rounded-full items-center justify-center">
+            <Image src={ProfilePic} alt="Picture of John A. Josephsen" className="p-3 w-full h-full rounded-full object-cover object-top"></Image>
           </div>
-          <div className="flex flex-col font-inter">
+          <div className="flex flex-col font-inter z-10">
             <h1 className="my-6 mx-auto text-white text-4xl font-bold">John A. Josephsen</h1>
             <h2 className="my-6 mx-auto text-white text-3xl">An aspiring Full Stack Web Developer with a passion for creating new things</h2>
             <ul className="my-6 mx-auto w-1/2 flex flex-row items-center justify-around">
@@ -48,7 +48,7 @@ export default function Home() {
                 </a>
               </li>
             </ul>
-            <button type="button" onClick={() => router.push('mailto:jjosephsenyt@gmail.com')} className="mt-6 mb-12 rounded-full bg-black text-white mx-auto w-1/6 p-3 ease-in-out duration-200 hover:bg-gray-800">Get In Touch</button>
+            <button type="button" onClick={() => router.push('mailto:jjosephsenyt@gmail.com')} className="mt-4 mb-12 rounded-full bg-white text-black mx-auto w-1/6 p-3 ease-in-out duration-200 hover:bg-gray-800 hover:text-white">Get In Touch</button>
           </div>
         </section>
         <section className="bg-secondary h-fit">
