@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <Layout page="home">
       <main className="flex flex-col justify-center">
-        <section className="flex items-center flex-col h-screen relative bg-[url('../../public/images/webdev.jpg')] bg-cover bg-center bg-no-repeat before:bg-black/25 before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0">
+        <section className="flex items-center flex-col h-screen relative bg-[url('../../public/images/webdev.jpg')] bg-cover bg-center bg-no-repeat before:bg-black/25 bg-fixed md:before:fixed before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0">
           <div className="z-10 flex bg-secondary mt-20 md:mt-24 w-64 h-64 md:h-64 md:w-64 lg:w-80 lg:h-80 rounded-full items-center justify-center">
             <Image src={ProfilePic} alt="Picture of John A. Josephsen" className="p-3 w-full h-full rounded-full object-cover object-top"></Image>
           </div>
