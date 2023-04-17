@@ -15,3 +15,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #45496A;
 }
+
+.altIcon {
+  filter: invert(92%) sepia(100%) saturate(0%) hue-rotate(139deg) brightness(102%) contrast(103%);
+}

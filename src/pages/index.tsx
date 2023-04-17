@@ -9,8 +9,10 @@ import JAJApparel from '../../public/images/JAJApparel.png'
 import MKJJ from '../../public/images/MKJJBanking.png'
 import QualisEvents from '../../public/images/QualisEvents.png'
 import Sintennial from '../../public/images/Sintennial.png'
+import nextJS from "../../public/images/nextjs.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3, faMdb } from "@fortawesome/free-brands-svg-icons"
+import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3 } from "@fortawesome/free-brands-svg-icons"
+import { faDatabase } from "@fortawesome/free-solid-svg-icons"
 import ExperienceCard from '@/components/experiencecard'
 import styles from "../styles/index.module.scss"
 import { useRouter } from 'next/router'
@@ -54,10 +56,10 @@ export default function Home() {
               <Skill faIcon={faJs} name="JavaScript"/>
               <Skill faIcon={faNode} name="NodeJS"/>
               <Skill faIcon={faReact} name="React"/>
-              <Skill faIcon={faTypo3} name="NextJS"/>
+              <Skill faIcon={faTypo3} altIcon={nextJS} name="NextJS"/>
               <Skill faIcon={faHtml5} name="HTML5"/>
               <Skill faIcon={faCss3} name="CSS3"/>
-              <Skill faIcon={faMdb} name="SQL"/>
+              <Skill faIcon={faDatabase} name="SQL"/>
             </ul>
         </section>
         <section className="h-fit bg-primary">
