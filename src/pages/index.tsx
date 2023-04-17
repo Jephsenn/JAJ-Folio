@@ -23,25 +23,15 @@ export default function Home() {
   return (
     <Layout page="home">
       <main className="flex flex-col justify-center">
-        <section className="flex items-center flex-col h-screen relative bg-[url('../../public/images/webdev.jpg')] bg-cover bg-center bg-no-repeat before:bg-black/25 md:bg-fixed before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0">
+        <section className="sm:h-full flex items-center flex-col h-screen md:h-screen relative bg-[url('../../public/images/webdev.jpg')] bg-cover bg-center bg-no-repeat before:bg-black/25 md:bg-fixed before:absolute before:top-0 before:right-0 before:bottom-0 before:left-0">
           <div className="flex flex-col items-center justify-center h-full">
-            <div className="z-10 flex bg-secondary mt-20 md:mt-20 lg:mt-30 w-64 h-64 md:h-64 md:w-64 lg:w-80 lg:h-80 rounded-full items-center justify-center">
+            <div className="z-10 flex bg-secondary mt-20 md:mt-20 lg:mt-30 w-44 h-44 md:h-56 md:w-56 lg:w-64 lg:h-64 rounded-full items-center justify-center">
               <Image src={ProfilePic} alt="Picture of John A. Josephsen" className="p-3 w-full h-full rounded-full object-cover object-top"></Image>
             </div>
             <div className="flex flex-col font-inter z-10">
               <h1 className="my-6 lg:my-6 mx-auto text-white md:text-3xl lg:text-4xl font-bold">John A. Josephsen</h1>
               <h2 className="px-6 md:px-12 my-6 lg:my-6 md:my-3 text-center mx-auto text-white md:text-xl lg:text-3xl">An aspiring Full Stack Web Developer with a passion for creating new things</h2>
-              <ul className="w-3/4 my-6 lg:my-6 md:my-3 mx-auto md:w-1/2 flex flex-row items-center justify-around">
-                <li>
-                  <a href="https://www.instagram.com/johnjosephsen/" target="_blank">
-                    <FontAwesomeIcon className="text-secondary w-10 lg:w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1" icon={faInstagram}/>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/john.josephsen.9" target="_blank">
-                    <FontAwesomeIcon className="text-secondary w-10 lg:w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1" icon={faFacebook}/>
-                  </a>
-                </li>
+              <ul className="w-1/3 my-6 lg:my-6 md:my-3 mx-auto md:w-1/4 flex flex-row items-center justify-around">
                 <li>
                   <a href="https://www.linkedin.com/in/john-josephsen/" target="_blank">
                     <FontAwesomeIcon className="text-secondary w-10 lg:w-12 ease-in-out duration-300 hover:text-white hover:-translate-y-1" icon={faLinkedin}/>

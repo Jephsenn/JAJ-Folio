@@ -16,18 +16,6 @@ export default function Navbar(props: Props){
         function checkScroll() {
         if (window.scrollY > 0) {
             nav?.classList.add("bg-primary");
-            if(isNavOpen){
-                nav?.children[0].children[0].classList.remove("hover:text-secondary");
-                nav?.children[1].children[0].children[0].classList.remove("hover:text-secondary");
-                nav?.children[1].children[1].children[0].classList.remove("hover:text-secondary");
-                nav?.children[1].children[2].classList.remove("bg-white");
-                nav?.children[1].children[2].classList.remove("text-black");
-                nav?.children[0].children[0].classList.add("hover:text-black");
-                nav?.children[1].children[0].children[0].classList.add("hover:text-black");
-                nav?.children[1].children[1].children[0].classList.add("hover:text-black");
-                nav?.children[1].children[2].classList.add("bg-black");
-                nav?.children[1].children[2].classList.add("text-white");
-            } 
         } else if (window.scrollY === 0) {
             if(document.querySelector('.NAVIGATION-MOBILE-OPEN')?.classList.contains('invisible')) {
                 nav?.classList.remove("bg-primary");
