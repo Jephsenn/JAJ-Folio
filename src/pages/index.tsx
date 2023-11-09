@@ -76,7 +76,7 @@ export default function Home() {
          <Header title="Education"/>
          <p className="mt-12 mb-4 mx-auto text-white text-2xl text-center">Recent Montclair State University Graduate</p>
          <p className="my-4 mx-auto text-white text-2xl text-center">Major: Computer Science</p>
-         <p className="my-4 mx-auto text-white text-2xl text-center mb-12">Average GPA: 3.6</p>
+         <p className="my-4 mx-auto text-white text-2xl text-center mb-12">Average GPA: 3.4</p>
         </section>
       </main>
     </Layout>
