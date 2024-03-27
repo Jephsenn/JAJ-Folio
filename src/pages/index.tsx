@@ -11,9 +11,10 @@ import QualisEvents from '../../public/images/QualisEvents.png'
 import Sintennial from '../../public/images/Sintennial.png'
 import nextJS from "../../public/images/nextjs.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3 } from "@fortawesome/free-brands-svg-icons"
-import { faDatabase } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons"
+import { faDatabase, faTerminal } from "@fortawesome/free-solid-svg-icons"
 import ExperienceCard from '@/components/experiencecard'
+import GitHubProject from '@/components/githubproject'
 import styles from "../styles/index.module.scss"
 import { useRouter } from 'next/router'
 
@@ -32,7 +33,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col font-inter z-10">
               <h1 className="my-6 lg:my-6 mx-auto text-white md:text-3xl lg:text-4xl font-bold">John A. Josephsen</h1>
-              <h2 className="px-6 md:px-12 my-6 lg:my-6 md:my-3 text-center mx-auto text-white md:text-xl lg:text-3xl">An aspiring Full Stack Web Developer with a passion for creating new things</h2>
+              <h2 className="px-6 md:px-12 my-6 lg:my-6 md:my-3 text-center mx-auto text-white md:text-xl lg:text-3xl">An aspiring Full Stack Web Developer and Software Engineer with a passion for innovation</h2>
               <ul className="w-1/3 my-6 lg:my-6 md:my-3 mx-auto md:w-1/4 flex flex-row items-center justify-around">
                 <li>
                   <a href="https://www.linkedin.com/in/john-josephsen/" target="_blank">
@@ -51,9 +52,10 @@ export default function Home() {
         </section>
         <section className="bg-secondary h-fit">
           <Header title="Skills"/>
-          <ul className="my-12 mx-auto w-1/2 flex flex-row items-center justify-center flex-wrap">
+          <ul className="my-12 mx-auto w-2/3 flex flex-row items-center justify-center flex-wrap">
               <Skill faIcon={faJava} name="Java"/>
               <Skill faIcon={faJs} name="JavaScript"/>
+              <Skill faIcon={faTerminal} name="Bash"/>
               <Skill faIcon={faNode} name="NodeJS"/>
               <Skill faIcon={faReact} name="React"/>
               <Skill faIcon={faTypo3} altIcon={nextJS} name="NextJS"/>
@@ -63,13 +65,19 @@ export default function Home() {
             </ul>
         </section>
         <section className="h-fit bg-primary">
-         <Header title="Experience"/>
+         <Header title="Web Experience"/>
          <ul className="my-12 flex flex-row flex-wrap justify-center">
            <ExperienceCard src={Sintennial} alt="Sintennial RSPS" link="#"/>
            <ExperienceCard src={QualisEvents} alt="Qualis Events" link="https://qualisevents.vercel.app"/>
-           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="https://jerseyexoticauto.com"/>
+           <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="#"/>
            <ExperienceCard src={JAJApparel} alt="JAJ Apparel" link="#"/>
            <ExperienceCard src={MKJJ} alt="MKJJ Online Bank" link="#"/>
+         </ul>
+         <hr className="w-[80%] m-auto"></hr>
+         <Header title="Programming Experience"/>
+         <ul className="my-12 flex flex-row flex-wrap justify-center text-white">
+            <GitHubProject name="Pre-Deployment_User_Transfer" lang="Shell" link="https://github.com/Jephsenn/Pre-Deployment_User_Transfer" desc="This is an IT pre-deployment user transfer script to pre-load data onto a client's new machine from their old machine. Can either run this Mac -&gt; Mac, or using a host machine to restore data from a drive to the new device."/>
+            <GitHubProject name="AppleChecklist " lang="Shell" link="https://github.com/Jephsenn/AppleChecklist" desc="This is an IT Checklist script for new/already deployed machines to ensure everything is installed/configured correctly."/>
          </ul>
         </section>
         <section className="bg-secondary h-fit">
