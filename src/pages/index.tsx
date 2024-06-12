@@ -9,6 +9,7 @@ import JAJApparel from '../../public/images/JAJApparel.png'
 import MKJJ from '../../public/images/MKJJBanking.png'
 import QualisEvents from '../../public/images/QualisEvents.png'
 import Sintennial from '../../public/images/Sintennial.png'
+import USA_ICKF from '../../public/images/USA-ICKF.png'
 import nextJS from "../../public/images/nextjs.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faFacebook, faLinkedin, faJava, faJs, faNode, faReact, faTypo3, faHtml5, faCss3} from "@fortawesome/free-brands-svg-icons"
@@ -67,17 +68,19 @@ export default function Home() {
         <section className="h-fit bg-primary">
          <Header title="Web Experience"/>
          <ul className="my-12 flex flex-row flex-wrap justify-center">
-           <ExperienceCard src={Sintennial} alt="Sintennial RSPS" link="#"/>
            <ExperienceCard src={QualisEvents} alt="Qualis Events" link="https://qualisevents.vercel.app"/>
+           <ExperienceCard src={USA_ICKF} alt="USA-ICKF" link="https://usa-ickf.com"/>
+           <ExperienceCard src={Sintennial} alt="Sintennial RSPS" link="#"/>
            <ExperienceCard src={JEAuto} alt="Jersey Exotic Auto" link="#"/>
            <ExperienceCard src={JAJApparel} alt="JAJ Apparel" link="#"/>
            <ExperienceCard src={MKJJ} alt="MKJJ Online Bank" link="#"/>
          </ul>
          <hr className="w-[80%] m-auto"></hr>
          <Header title="Programming Experience"/>
-         <ul className="my-12 flex flex-row flex-wrap justify-center text-white">
+         <ul className="my-12 flex flex-row flex-wrap justify-center text-white w-[80%] mx-auto">
+            <GitHubProject name="UserMigrationV4" lang="Shell" link="https://github.com/Jephsenn/UserMigrationV4" desc="This is an IT MacOS user transfer script to backup and/or restore data from a client's old machine to an external drive, and/or restore the data from the backups to their new machine."/>
             <GitHubProject name="Pre-Deployment_User_Transfer" lang="Shell" link="https://github.com/Jephsenn/Pre-Deployment_User_Transfer" desc="This is an IT pre-deployment user transfer script to pre-load data onto a client's new machine from their old machine. Can either run this Mac -&gt; Mac, or using a host machine to restore data from a drive to the new device."/>
-            <GitHubProject name="AppleChecklist " lang="Shell" link="https://github.com/Jephsenn/AppleChecklist" desc="This is an IT Checklist script for new/already deployed machines to ensure everything is installed/configured correctly."/>
+            <GitHubProject name="AppleChecklist" lang="Shell" link="https://github.com/Jephsenn/AppleChecklist" desc="This is an IT Checklist script for new/already deployed machines to ensure everything is installed/configured correctly."/>
          </ul>
         </section>
         <section className="bg-secondary h-fit">
